@@ -1,2 +1,8 @@
-hfei is ffkiewmnile 1 
-we gonna back to branch main right now.
+分支（branch）以個人開發來看，是為了解決開發新功能途中遇上緊急修正的情況，我們透過分支可以將「開發新功能」、「修正」分開成兩條線，在開發新功能的同時，可以修正穩定版本的 bug。
+
+開啟新的分支： $ git branch <branchName>
+確認目前所在分支： $ git branch -v
+切換分支： $ git checkout <branchName>
+刪除分支： $ git branch -r <branchName>
+合併分支： $ git merge <被合併分支 branchName>
+假設在合併時發生衝突，必須開啟檔案手動解決衝突，重新 $ git add 並 $ git commit ，git 會新增一個版本。
